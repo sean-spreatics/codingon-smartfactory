@@ -41,7 +41,7 @@ SELECT * FROM user WHERE age BETWEEN 25 AND 50;
 SELECT * FROM user WHERE age >= 25 AND age <= 50;
 SELECT * FROM user WHERE age > 24 AND age < 51; 
 
-
+  
 
 
 
