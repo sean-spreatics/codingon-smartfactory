@@ -2,6 +2,9 @@
 
 -- smartfactory 데이터베이스 사용
 USE smartfactory;
+desc customer;
+INSERT INTO user VALUES ('hong', '안녕하세요', '홍길동', '010-1234-1234', '1990-01-31');
+
 
 -- < SELECT/FROM >
 
@@ -153,7 +156,17 @@ SELECT * FROM customer WHERE birth >= '2000-01-01' ORDER BY custid DESC LIMIT 2;
 SELECT * FROM customer LIMIT 1, 2;
 
 
+-- < IS NULL >
+-- 고객 테이블에서 연락처가 존재하지 않는 고객 조회
+SELECT * FROM customer WHERE phone IS NULL;
+SELECT * FROM customer WHERE birth IS NULL;
+SELECT * FROM customer WHERE phone IS NULL AND birth IS NULL;
 
+-- 고객 테이블에서 연락처가 존재하는 고객 조회
+SELECT * FROM customer WHERE phone IS NOT NULL;
+
+
+ 
 
 
 
