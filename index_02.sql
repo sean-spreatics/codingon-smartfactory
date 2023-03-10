@@ -270,21 +270,8 @@ SELECT custid, SUM(amount) AS 'total_amount', sum(price * amount) AS 'total_pric
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+use smartfactory;
+desc orders;
 
 
 

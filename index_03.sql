@@ -92,12 +92,3 @@ ALTER TABLE new_customer DROP n_name;
 
 DROP TABLE new_customer;
 DROP TABLE new_orders;
-
-
-
-
-
-
-
-
-
